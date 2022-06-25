@@ -4,9 +4,6 @@ pipeline {
   }
   stages {
     stage('Test') {
-     environment {
-            HOME="."
-      }
       steps {
         sh 'node --version'
       }
