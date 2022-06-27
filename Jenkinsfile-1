@@ -5,11 +5,9 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh '''
-        npm -v
-        npm i copy-lite
-        node --version
-        '''
+        sh 'npm -v'
+        sh 'npm i copy-lite'
+        sh 'node --version'
       }
     }
   }
